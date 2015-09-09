@@ -107,12 +107,12 @@ var SampleApp = function() {
             res.send(self.cache_get('index.html') );
         };
 
-        self.routes['Resume'] = function(req, res) {
+        self.routes['/Resume'] = function(req, res) {
           res.setHeader('Content-Type', 'text/html');
           res.send(self.cache_get('resume.html') );
         };
 
-        self.routes['Resume/photos'] = function(req, res) {
+        self.routes['/Resume/photos'] = function(req, res) {
           res.setHeader('Content-Type', 'text/html');
           res.send(self.cache_get('photos.html') );
         };
