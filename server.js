@@ -44,6 +44,8 @@ var SampleApp = function() {
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
+        self.zcache['resume.html'] = fs.readFileSync('./resume.html');
+        self.zcache['photos.html'] = fs.readFileSync('./photos.html');
     };
 
 
@@ -156,4 +158,3 @@ var SampleApp = function() {
 var zapp = new SampleApp();
 zapp.initialize();
 zapp.start();
-
