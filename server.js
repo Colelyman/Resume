@@ -46,6 +46,7 @@ var SampleApp = function() {
         self.zcache['index.html'] = fs.readFileSync('./index.html');
         self.zcache['resume.html'] = fs.readFileSync('./resume.html');
         self.zcache['photos.html'] = fs.readFileSync('./photos.html');
+        self.zcache['stylesheet.css'] = fs.readFileSync('./stylesheet.css');
     };
 
 
