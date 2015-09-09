@@ -117,6 +117,11 @@ var SampleApp = function() {
           res.setHeader('Content-Type', 'text/html');
           res.send(self.cache_get('photos.html') );
         };
+
+        self.routes['/stylesheet'] = function(req, res) {
+          res.setHeader('Content-Type', 'text/css');
+          res.send(self.cache_get('stylesheet.css') );
+        };
     };
 
 
