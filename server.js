@@ -118,7 +118,7 @@ var SampleApp = function() {
           res.send(self.cache_get('photos.html') );
         };
 
-        self.routes['/stylesheet'] = function(req, res) {
+        self.routes['/stylesheet.css'] = function(req, res) {
           res.setHeader('Content-Type', 'text/css');
           res.send(self.cache_get('stylesheet.css') );
         };
