@@ -47,7 +47,7 @@ var SampleApp = function() {
         self.zcache['resume.html'] = fs.readFileSync('./resume.html');
         self.zcache['photos.html'] = fs.readFileSync('./photos.html');
         self.zcache['stylesheet.css'] = fs.readFileSync('./stylesheet.css');
-        self.zcache['Cole bitwise.png'] = fs.readFileSync('./Cole\ bitwise.png');
+        self.zcache['ColeBitwise.png'] = fs.readFileSync('./ColeBitwise.png');
         self.zcache['Coding.jpg'] = fs.readFileSync('./Coding.jpg');
         self.zcache['WinterQuarters.jpg'] = fs.readFileSync('./WinterQuarters.jpg');
         self.zcache['IMG_1240.JPG'] = fs.readFileSync('./IMG_1240.JPG');
@@ -127,9 +127,9 @@ var SampleApp = function() {
           res.send(self.cache_get('stylesheet.css') );
         };
 
-        self.routes['/Resume/Cole bitwise.png'] = function(req, res) {
+        self.routes['/Resume/ColeBitwise.png'] = function(req, res) {
           res.setHeader('Content-Type', 'image/png');
-          res.send(self.cache_get('Cole\ bitwise.png') );
+          res.send(self.cache_get('ColeBitwise.png') );
         };
 
         self.routes['/Resume/Coding.jpg'] = function(req, res) {
