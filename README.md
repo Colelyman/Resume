@@ -1,3 +1,9 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
-
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+= Resume Lab 1 - CS 201R =
+The following files are used for the Resume Lab.
+* resume.html
+* photos.html
+** ColeBitwise.png
+** Coding.jpg
+** WinterQuarters.jpg
+* stylesheet.html
+ 
