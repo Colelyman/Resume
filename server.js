@@ -47,6 +47,10 @@ var SampleApp = function() {
         self.zcache['resume.html'] = fs.readFileSync('./resume.html');
         self.zcache['photos.html'] = fs.readFileSync('./photos.html');
         self.zcache['stylesheet.css'] = fs.readFileSync('./stylesheet.css');
+        self.zcache['Cole bitwise.png'] = fs.readFileSync('./Cole bitwise.png');
+        self.zcache['Coding.jpg'] = fs.readFileSync('./Coding.jpg');
+        self.zcache['WinterQuarters.jpg'] = fs.readFileSync('./WinterQuarters.jpg');
+        self.zcache['IMG_1240.JPG'] = fs.readFileSync('./IMG_1240.JPG');
     };
 
 
@@ -121,6 +125,26 @@ var SampleApp = function() {
         self.routes['/Resume/stylesheet.css'] = function(req, res) {
           res.setHeader('Content-Type', 'text/css');
           res.send(self.cache_get('stylesheet.css') );
+        };
+
+        self.routes['/Cole bitwise.png'] = function(req, res) {
+          res.setHeader('Content-Type', 'image/png');
+          res.send(self.cache_get('Cole bitwise.png') );
+        };
+
+        self.routes['/Coding.jpg'] = function(req, res) {
+          res.setHeader('Content-Type', 'image/jpg');
+          res.send(self.cache_get('Coding.jpg') );
+        };
+
+        self.routes['/WinterQuarters.jpg'] = function(req, res) {
+          res.setHeader('Content-Type', 'image/jpg');
+          res.send(self.cache_get('WinterQuarters.jpg') );
+        };
+
+        self.routes['/IMG_1240.JPG'] = function(req, res) {
+          res.setHeader('Content-Type', 'image/jpg');
+          res.send(self.cache_get('IMG_1240.JPG') );
         };
     };
 
