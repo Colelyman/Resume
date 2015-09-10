@@ -122,6 +122,11 @@ var SampleApp = function() {
           res.setHeader('Content-Type', 'text/css');
           res.send(self.cache_get('stylesheet.css') );
         };
+
+        self.routes['.stylesheet.css'] = function(req, res) {
+          res.setHeader('Content-Type', 'text/css');
+          res.send(self.cache_get('stylesheet.css') );
+        };
     };
 
 
