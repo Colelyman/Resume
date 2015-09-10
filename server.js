@@ -127,22 +127,22 @@ var SampleApp = function() {
           res.send(self.cache_get('stylesheet.css') );
         };
 
-        self.routes['/Cole bitwise.png'] = function(req, res) {
+        self.routes['/Resume/Cole bitwise.png'] = function(req, res) {
           res.setHeader('Content-Type', 'image/png');
           res.send(self.cache_get('Cole bitwise.png') );
         };
 
-        self.routes['/Coding.jpg'] = function(req, res) {
+        self.routes['/Resume/Coding.jpg'] = function(req, res) {
           res.setHeader('Content-Type', 'image/jpg');
           res.send(self.cache_get('Coding.jpg') );
         };
 
-        self.routes['/WinterQuarters.jpg'] = function(req, res) {
+        self.routes['/Resume/WinterQuarters.jpg'] = function(req, res) {
           res.setHeader('Content-Type', 'image/jpg');
           res.send(self.cache_get('WinterQuarters.jpg') );
         };
 
-        self.routes['/IMG_1240.JPG'] = function(req, res) {
+        self.routes['/Resume/IMG_1240.JPG'] = function(req, res) {
           res.setHeader('Content-Type', 'image/jpg');
           res.send(self.cache_get('IMG_1240.JPG') );
         };
